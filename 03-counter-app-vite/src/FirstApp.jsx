@@ -10,6 +10,8 @@ const person = {
     edad: 15
 }
 
+const numbers = [1,2,3,4,5,6,7,8,9];
+
 const getSaludo = (a, b) => { //Mientras estas funciones no dependan de nada van afuera
     return a+b;
 }
@@ -29,6 +31,7 @@ export const FirstApp = () => {
 
         //Forma moderna (sin importa el Fragment) usando un agrupador
         <>
+            <h1>{numbers}</h1>
             <h1>{ getSaludo(10, newMessage.edad) }</h1>
             <p>Hola soy un Cacahuate</p>
         </>
