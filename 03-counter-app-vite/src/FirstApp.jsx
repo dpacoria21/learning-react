@@ -5,6 +5,11 @@ const newMessage = {
     edad: 20
 };
 
+const person = {
+    name: 'Rodrigo',
+    edad: 15
+}
+
 const getSaludo = (a, b) => { //Mientras estas funciones no dependan de nada van afuera
     return a+b;
 }
