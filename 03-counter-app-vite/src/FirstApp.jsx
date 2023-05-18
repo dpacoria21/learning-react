@@ -16,11 +16,18 @@ const getSaludo = (a, b) => { //Mientras estas funciones no dependan de nada van
     return a+b;
 }
 
-export const FirstApp = () => {
+export const FirstApp = ( props ) => {
+
+    console.log(props);
 
     const name = 'Diego Pacori'; // si el name es usado por una funcion, estas se deben crear aqui
 
     return (
+
+        <>
+            <h1>{ props.title }</h1>
+            <p> { props.subtitle } </p>
+        </>
         //Cabe resaltar que siempre se espera un nodo padre
 
         // Usando Fragmentos (Forma antigua)
@@ -30,10 +37,10 @@ export const FirstApp = () => {
         // </Fragment>        
 
         //Forma moderna (sin importa el Fragment) usando un agrupador
-        <>
-            <h1>{numbers}</h1>
-            <h1>{ getSaludo(10, newMessage.name) }</h1>
-            <p>Hola soy un Cacahuate</p>
-        </>
+        // <>
+        //     <h1>{ props.title }</h1>
+        //     <h1>{ getSaludo(10, newMessage.name) }</h1>
+        //     <p>Hola soy un Cacahuate</p>
+        // </>
     );
 }
