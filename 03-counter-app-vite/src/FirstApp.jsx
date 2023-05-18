@@ -18,7 +18,7 @@ const getSaludo = (a, b) => { //Mientras estas funciones no dependan de nada van
     return a+b;
 }
 
-export const FirstApp = ( {title, subtitle} ) => {
+export const FirstApp = ( {title, subtitle, nombre} ) => {
 
     
 
@@ -29,6 +29,7 @@ export const FirstApp = ( {title, subtitle} ) => {
         <>
             <h1>{ title }</h1>
             <p> { subtitle } </p>
+            <p> { nombre } </p>
         </>
         //Cabe resaltar que siempre se espera un nodo padre
 
@@ -49,5 +50,11 @@ export const FirstApp = ( {title, subtitle} ) => {
 
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired
+    subtitle: PropTypes.string
+}
+
+FirstApp.defaultProps = {
+    title: "No se ha enviado ningun titulo",
+    subtitle: "No hay subtitulos manos",
+    nombre: "Diego Pacori"
 }
