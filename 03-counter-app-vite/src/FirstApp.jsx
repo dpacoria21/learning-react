@@ -1,4 +1,6 @@
-import { Fragment } from "react";
+import PropTypes from 'prop-types';
+
+// import { Fragment } from "react";
 
 const newMessage = {
     name: 'Diego',
@@ -16,17 +18,17 @@ const getSaludo = (a, b) => { //Mientras estas funciones no dependan de nada van
     return a+b;
 }
 
-export const FirstApp = ( props ) => {
+export const FirstApp = ( {title, subtitle} ) => {
 
-    console.log(props);
+    
 
     const name = 'Diego Pacori'; // si el name es usado por una funcion, estas se deben crear aqui
 
     return (
 
         <>
-            <h1>{ props.title }</h1>
-            <p> { props.subtitle } </p>
+            <h1>{ title }</h1>
+            <p> { subtitle } </p>
         </>
         //Cabe resaltar que siempre se espera un nodo padre
 
@@ -43,4 +45,9 @@ export const FirstApp = ( props ) => {
         //     <p>Hola soy un Cacahuate</p>
         // </>
     );
+}
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired
 }
