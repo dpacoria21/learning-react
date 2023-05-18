@@ -32,7 +32,7 @@ export const FirstApp = () => {
         //Forma moderna (sin importa el Fragment) usando un agrupador
         <>
             <h1>{numbers}</h1>
-            <h1>{ getSaludo(10, newMessage.edad) }</h1>
+            <h1>{ getSaludo(10, newMessage.name) }</h1>
             <p>Hola soy un Cacahuate</p>
         </>
     );
