@@ -17,16 +17,12 @@ export const GifExpertApp = () => {
 
     return (
         <>
-        
             <h1>GifExpertApp</h1>
-            
 
             <AddCategory 
                 // setCategories={ setCategories }
                 onNewCategory={ onAddCategory }
             />
-
-
 
             {/* <button onClick={onAddCategory}>Agregar</button> */}
             

@@ -17,11 +17,13 @@ describe('Testeando el useFetchGifs', () => {
 
         const { result } = renderHook(() => useFetchGifs('One Punch'));
         console.log(result);
+        
         await waitFor( 
             () => expect(result.current.images.length).toBeGreaterThan(0) 
         );
 
         const {images, isLoading} = result.current;
+
         expect(images.length).toBeGreaterThan(0);
         expect(isLoading).toBeFalsy();
         
