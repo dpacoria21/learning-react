@@ -1,8 +1,8 @@
 import { useState } from "react"
+import  PropTypes  from 'prop-types'
 
-export const AddCategory = (props) => {
+export const AddCategory = ({onNewCategory}) => {
 
-    const {onNewCategory} = props;
 
     let [inputValue, setInputValue] = useState('');
 
@@ -31,4 +31,8 @@ export const AddCategory = (props) => {
         </form>
 
     )
+}
+
+AddCategory.propTypes = {
+    onNewCategory: PropTypes.func.isRequired,
 }
