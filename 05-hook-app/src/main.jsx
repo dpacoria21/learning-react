@@ -8,9 +8,9 @@ import { SimpleForm } from "./02-useEffect/SimpleForm";
 // import { CounterApp } from "./01-useState/CounterApp";
 
 ReactDOM.createRoot(document.querySelector('#root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <>
       <SimpleForm />
     </>
-  </React.StrictMode>
+  // </React.StrictMode>
 )
