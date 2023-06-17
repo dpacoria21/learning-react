@@ -11,12 +11,14 @@ import './index.css';
 // import { Memorize } from "./06-memos/Memorize";
 // import { HooksApp } from "./HooksApp";
 // import { CounterApp } from "./01-useState/CounterApp";
-import { MemoHook } from "./06-memos/MemoHook";
+// import { MemoHook } from "./06-memos/MemoHook";
+import { CallbackHook } from "./06-memos/CallbackHook";
+
 
 ReactDOM.createRoot(document.querySelector('#root')).render(
   // <React.StrictMode>
     <>
-      <MemoHook />
+      <CallbackHook />
     </>
   // </React.StrictMode>
 )
