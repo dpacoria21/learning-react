@@ -7,17 +7,6 @@ export const TodoAdd = ({onNewTodo}) => {
         description: '',
     });
 
-    // const [todo, setTodo] = useState({
-    //     description: '',
-    // });
-
-    // const onInputChange = ({target}) => {
-    //     const {value} = target;
-    //     setTodo({
-    //         description: value,
-    //     });
-    // }
-
     const onFormSubmit = (e) => {
         e.preventDefault();
 
@@ -31,7 +20,6 @@ export const TodoAdd = ({onNewTodo}) => {
 
         onNewTodo(newTodo);
         onResetForm();
-        // console.log(newTodo);
     }
 
     return (
