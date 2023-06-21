@@ -12,9 +12,7 @@ export const HeroPage = () => {
     const navigate = useNavigate();
 
     const onNavigateBar = () => {
-        navigate('/', {
-            replace: true
-        })
+        navigate(-1);
     }
 
     if(!hero) {
