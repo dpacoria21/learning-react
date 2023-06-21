@@ -1,5 +1,5 @@
 import { getHeroesByPublisher } from "../helpers"
-import { HeroList } from "./HeroList";
+import { HeroList } from "../components/HeroList";
 
 export const MarvelPage = () => {
 
